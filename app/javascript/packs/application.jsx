@@ -9,12 +9,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import '../stylesheets/bootstrap-theme';
 
+import '../stylesheets/fonts';
 import '../stylesheets/main';
 import '../js/main';
 import '../vendor/owl-carousel/owl.carousel.js';
 import '../vendor/owl-carousel/owl.carousel.css';
 import '../vendor/owl-carousel/owl.theme.css';
 import '../vendor/owl-carousel/owl.transitions.css';
+
 
 import App from '../components/app';
 import Index from '../components/index';

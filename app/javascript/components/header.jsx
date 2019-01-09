@@ -3,26 +3,25 @@ import React from 'react'
 class Header extends React.Component {
   render() {
     return (
-      <div id="top" className="navbar navbar-dark navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div className="container">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span className="sr-only">Toggle navigation</span>
-              <i className="fa fa-bars fa-2x"></i>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href="#"><strong>PHOTO</strong>GRAPHER</a>
+            <a className="navbar-brand" href="#"><strong>CODY</strong>TANNER.COM</a>
           </div>
-          <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav navbar-right">
-              <li className="active"><a href="#carousel-header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#social">Social</a></li>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#carousel-header">Home</a></li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#projects">Projects</a></li>
+              <li class="nav-item"><a href="#blog">Blog</a></li>
+              <li class="nav-item"><a href="#social">Social</a></li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     );
   }
 }
