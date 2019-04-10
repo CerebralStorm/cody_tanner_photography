@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from '../store';
 import $ from 'jquery';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,15 +32,14 @@ import Index from '../components/index';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Provider store={store}>
-      <BrowserRouter>
-        <App>
-          <Switch>
-            <Route exact path="/" component={Index}/>
-          </Switch>
-        </App>
-      </BrowserRouter>
-    </Provider>,
+    <BrowserRouter>
+      <App>
+        <Switch>
+          <Route exact path="/" component={Index}/>
+        </Switch>
+      </App>
+    </BrowserRouter>
+    ,
     document.getElementById('application')
   )
 })

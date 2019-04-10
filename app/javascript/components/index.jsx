@@ -1,4 +1,6 @@
 import React from 'react'
+import { withStore} from '../store';
+
 import ProjectTile from './projects/project_tile'
 import BlogTile from './blogs/blog_tile'
 

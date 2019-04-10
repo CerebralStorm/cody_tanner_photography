@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
+import { createStore} from '../store'
+
 // import FlashMessage from './flash_message'
 
 class App extends React.Component {
@@ -15,4 +17,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default createStore(App);
