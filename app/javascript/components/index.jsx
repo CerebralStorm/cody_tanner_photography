@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectTile from './projects/project_tile'
 
 import recent1 from '../images/recent1.jpg'
 import recent2 from '../images/recent2.jpg'
@@ -47,9 +48,10 @@ class Index extends React.Component {
             <div className="row">
               <div class="col-8 mx-auto">
                 <div>
-                  <h1>CodyTanner.com Adventures and Photography</h1>
+                  <h1>CodyTanner.com Real Estate Photography</h1>
                   <p>
-                      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis.
+                    I regularly look at propertis on the MLS. I am blown away at how bad the majority of the photos are. Please don't make that same mistake. If you have good photos of your property, you will have more buyers come visit.
+                    With more buyers you will get more offers and will ultimately end up getting a much better price.
                   </p>
                 </div>
               </div>
@@ -64,34 +66,11 @@ class Index extends React.Component {
 
           <div className="recent-projects-content content-block-gray">
             <div id="owl-example" className="owl-carousel">
-              <div>
-                <img src={recent1} alt="" />
-                <a href="#">Cartoon de loop</a>
-              </div>
-              <div>
-                <img src={recent2} alt="" />
-                <a href="#">In to the snow</a>
-              </div>
-              <div>
-                <img src={recent3} alt="" />
-                <a href="#">girl in sunset</a>
-              </div>
-              <div>
-                <img src={recent4} alt="" />
-                <a href="#">Tools</a>
-              </div>
-              <div>
-                <img src={recent5} alt="" />
-                <a href="#">Sunrise in west</a>
-              </div>
-              <div>
-                <img src={recent6} alt="" />
-                <a href="#">girl in sunset</a>
-              </div>
-              <div>
-                <img src={recent4} alt="" />
-                <a href="#">Lorem Ipsum</a>
-              </div>
+              <ProjectTile />
+              <ProjectTile />
+              <ProjectTile />
+              <ProjectTile />
+              <ProjectTile />
             </div>
           </div>
         </div>
