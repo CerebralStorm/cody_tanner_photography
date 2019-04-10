@@ -1,6 +1,8 @@
 import React from 'react'
 import { withStore} from '../store';
 
+import BlogApi from '../api/blog_api'
+
 import ProjectTile from './projects/project_tile'
 import BlogTile from './blogs/blog_tile'
 
@@ -16,6 +18,11 @@ import slide1 from '../images/slide1.jpg'
 import slide2 from '../images/slide2.jpg'
 
 class Index extends React.Component {
+  componentDidMount() {
+    BlogApi.loadBlogs().then(response => {
+      this.props.store.set('blogs', response.data.blogs)
+    })
+  }
   render() {
     return (
       <div>
@@ -87,9 +94,11 @@ class Index extends React.Component {
             </header>
             <section className="block-body">
               <div className="row">
-                <BlogTile />
-                <BlogTile />
-                <BlogTile />
+                {
+                  this.props.store.get('blogs', []).map(blog => {
+                    return <BlogTile key={blog.id} blog={blog} />
+                  })
+                }
               </div>
             </section>
           </div>
@@ -99,5 +108,5 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default withStore(Index);
 

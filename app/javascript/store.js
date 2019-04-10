@@ -3,8 +3,8 @@ const StoreContext = React.createContext()
 const createStore = WrappedComponent => {
   return class extends React.Component {
     state = {
-      get: key => {
-        return this.state[key]
+      get: (key, defaultValue) => {
+        return this.state[key] || defaultValue
       },
       set: (key, value) => {
         const state = this.state
