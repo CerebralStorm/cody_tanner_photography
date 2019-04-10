@@ -5,7 +5,7 @@ class BlogTile extends React.Component {
   render() {
     return (
       <div className="col-md blog-post">
-        <img src="img/bike_water1-1000x600.jpg" alt="Design Your Mind" />
+        <img src={recent1} alt="" />
         <a href="#"><h2>Design Your Mind</h2></a>
         <div className="date">3 Nov, 2014</div>
       </div>
