@@ -5,8 +5,8 @@ class ProjectTile extends React.Component {
   render() {
     return (
       <div>
-        <img src={recent1} alt="" />
-        <a href="#">Cartoon de loop</a>
+        <img src={this.props.project.image} alt="" />
+        <a href="#">{this.props.project.name}</a>
       </div>
     );
   }

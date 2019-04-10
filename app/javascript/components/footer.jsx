@@ -16,7 +16,7 @@ class Footer extends React.Component {
         </div>
 
         <footer className="content-block content-block-dark">
-          <p>&copy; Copyright Photographer 2014. Theme by <a href="https://themewagon.com/" target="_blank"> ThemeWagon</a></p>
+          <p>&copy; Copyright 2019</p>
         </footer>
       </div>
     );

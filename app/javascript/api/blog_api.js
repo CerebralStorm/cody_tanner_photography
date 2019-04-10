@@ -6,8 +6,8 @@ class BlogApi {
     return axios.get(`/api/v1/blogs`, snakeCase(params))
   }
 
-  static loadBlog(orderId, params = {}) {
-    return axios.get(`/api/v1/blogs/${orderId}`, snakeCase(params))
+  static loadBlog(blogId, params = {}) {
+    return axios.get(`/api/v1/blogs/${blogId}`, snakeCase(params))
   }
 }
 

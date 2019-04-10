@@ -2,6 +2,7 @@ import React from 'react'
 import { withStore} from '../store';
 
 import BlogApi from '../api/blog_api'
+import ProjectApi from '../api/project_api'
 
 import ProjectTile from './projects/project_tile'
 import BlogTile from './blogs/blog_tile'
@@ -21,6 +22,9 @@ class Index extends React.Component {
   componentDidMount() {
     BlogApi.loadBlogs().then(response => {
       this.props.store.set('blogs', response.data.blogs)
+    })
+    ProjectApi.loadProjects().then(response => {
+      this.props.store.set('projects', response.data.projects)
     })
   }
   render() {
@@ -76,11 +80,11 @@ class Index extends React.Component {
 
           <div className="recent-projects-content content-block-gray">
             <div id="owl-example" className="owl-carousel">
-              <ProjectTile />
-              <ProjectTile />
-              <ProjectTile />
-              <ProjectTile />
-              <ProjectTile />
+              {
+                this.props.store.get('projects', []).map(project => {
+                  return <ProjectTile key={project.id} project={project} />
+                })
+              }
             </div>
           </div>
         </div>
