@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectTile from './projects/project_tile'
+import BlogTile from './blogs/blog_tile'
 
 import recent1 from '../images/recent1.jpg'
 import recent2 from '../images/recent2.jpg'
@@ -46,7 +47,7 @@ class Index extends React.Component {
         <div id="about" className="content-block content-block-cyan">">
           <div className="container">
             <div className="row">
-              <div class="col-8 mx-auto">
+              <div className="col-8 mx-auto">
                 <div>
                   <h1>CodyTanner.com Real Estate Photography</h1>
                   <p>
@@ -78,27 +79,15 @@ class Index extends React.Component {
         <div id="blog" className="content-block content-block-gray">
           <div className="container">
             <header className="block-heading cleafix">
-              <a href="#" className="btn btn-o btn-lg pull-right">View All</a>
+              <a href="#" className="btn btn-o btn-lg float-right">View All</a>
               <h1>From the Blog</h1>
               <p>Keep up with the latest happenings.</p>
             </header>
             <section className="block-body">
               <div className="row">
-                <div className="col-md blog-post">
-                  <img src="img/bike_water1-1000x600.jpg" alt="Design Your Mind" />
-                  <a href="#"><h2>Design Your Mind</h2></a>
-                  <div className="date">3 Nov, 2014</div>
-                </div>
-                <div className="col-md blog-post">
-                  <img src="img/mac_glasses1-1000x600.jpg" alt="Winter Is Comming" />
-                  <a href="#"><h2>Winter Is Comming</h2></a>
-                  <div className="date">3 Nov, 2014</div>
-                </div>
-                <div className="col-md blog-post">
-                  <img src="img/road-1000x600.jpg" alt="The Illustration" />
-                  <a href="#"><h2>The Illustration</h2></a>
-                  <div className="date">3 Nov, 2014</div>
-                </div>
+                <BlogTile />
+                <BlogTile />
+                <BlogTile />
               </div>
             </section>
           </div>

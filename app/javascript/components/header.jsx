@@ -3,28 +3,28 @@ import React from 'react'
 class Header extends React.Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
         <div className='container'>
-          <a class="navbar-brand" href="#"><strong>CODY</strong>TANNER.COM</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a className="navbar-brand" href="#"><strong>CODY</strong>TANNER.COM</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#projects">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#blog">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social">Social</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#social">Social</a>
               </li>
             </ul>
           </div>
